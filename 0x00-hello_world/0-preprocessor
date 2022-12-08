@@ -1,2 +1,2 @@
 #!/bin/bash
-cc $CFILE > c
+export main.c=CFILE > c
