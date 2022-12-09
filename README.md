@@ -1,1 +1,1 @@
-0x00. C - Hello, World
+The project is about Variables, if, else, while
