@@ -1,20 +1,11 @@
-#include <unistd.h>
-#include <ctype.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _isupper - checks if case of character c
- * @c: character input
- *
- * Return: 1 if c is uppercase 0 otherwise
+ * _isupper - checks for uppercase character
+ * @c: the character to be checked
+ * Return: 1 if c is uppercase, 0 otherwise
  */
 int _isupper(int c)
 {
-	int up;
-
-	if (isupper(c))
-		up = 1;
-	else
-		up = 0;
-	return (up);
+	return (c >= 'A' && c <= 'Z');
 }
