@@ -7,13 +7,13 @@
 int _isdigit(int c)
 {
 
-	int c;
+	int dig;
 
 	if(isdigit(c))
 		
-		c = 1;
+		dig = 1;
 	else
-		c = 0;
+		dig = 0;
 
-	return up;
+	return dig;
 }
