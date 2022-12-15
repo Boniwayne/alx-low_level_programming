@@ -9,10 +9,11 @@ int _isupper(int c);
 int main(void)
 {
 	char c = 'A';
-	if (c == _isupper(c))
-		return 1;
+	if (isupper(c))
+		return c;
 	
-	else if(c != _isupper(c))
+	else
+
 	       return 0;
 
 
