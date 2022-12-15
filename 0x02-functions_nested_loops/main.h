@@ -1,5 +1,5 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef BONNY_FILE
+#define BONNY_FILE
 
 int _putchar(char c);
 void print_alphabet(void);
