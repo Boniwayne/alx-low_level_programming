@@ -1,4 +1,8 @@
-#include "main.h"
+#include <unistd.h>
+
+#include <ctype.h>
+
+#include <stdio.h>
 
 /**
  * main - checks if  for a digit (0 through 9).
