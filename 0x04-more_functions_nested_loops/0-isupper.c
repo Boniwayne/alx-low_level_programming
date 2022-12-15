@@ -1,22 +1,20 @@
+#include <unistd.h>
+#include <ctype.h>
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - checks the uppercase character
- * Retun: 0 (success)
+ * _isupper - checks if case of character c
+ * @c: character input
+ *
+ * Return: 1 if c is uppercase 0 otherwise
  */
-int _isupper(int c);
-int main(void)
+int _isupper(int c)
 {
-	char c = 'A';
+	int up;
+
 	if (isupper(c))
-		return c;
-	
+		up = 1;
 	else
-
-	       return 0;
-
-
-
+		up = 0;
+	return (up);
 }
-
