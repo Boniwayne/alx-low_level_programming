@@ -1,18 +1,19 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
- * print_alphabet - print all lowercase character
- *
- * Return: void
+ * print_alphabet - prints the alphabet, in lowercase, followed by a new line
  */
 void print_alphabet(void)
 {
-	char alpha;
+	char ch;
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	ch = 'a';
+
+	while (ch <= 'z')
 	{
-		_putchar(alpha);
+		_putchar(ch);
+		ch++;
 	}
+
 	_putchar('\n');
 }
