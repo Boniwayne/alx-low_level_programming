@@ -11,9 +11,9 @@ int main(void)
 {
 	int pass[100];
 	int i, sum, n;
-	
+
 	sum = 0;
-	
+
 	srand(time(NULL));
 
 	for (i = 0; i < 100; i++)
