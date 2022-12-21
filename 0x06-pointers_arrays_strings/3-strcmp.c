@@ -1,36 +1,47 @@
 /**
- * _strncpy - A function that copies a string.
+ * _strcmp - a function that compares two strings
  *
- * @dest: pointer to destination input buffer
- * @src: pointer to source input buffer
- * @n: bytes of @src
+ * @s1: string 1 input to compare
+ * @s2: against this other string 2
  *
- * Return: @dest
+ * Return: 0 if s1 and s2 are equal
+ *        negative integer if the stopping character
+ *                in @s1 was less than the stopping
+ *                character in @s2
+ *        positive integer if the stopping character
+ *                in @s1 was greater than the stopping
+ *                character in @s2
 */
 
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-	int i;
+	int i = 0, r;
 
 	/**
-	 * iterate through src array
-	 * where if there is no null byte
-	 * among the first n bytes of source
-	 * the string placed in dest will not be
-	 * null terminated
+	 * iterate through src and
+	 * compare it with dest
 	*/
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[i] = src[i];
-	/**
-	 * if the length of source is less than n
-	 * write additional nullbytes to dest to
-	 * ensure that a total of n bytes is written
-	*/
-	while (i < n)
+	while (s1[i] != '\0' && s2[i] != '\0')
 	{
-		dest[i] = '\0';
+		/**
+		 * if they differ by a single character
+		 * don't iterate further
+		*/
+		if (s1[i] != s2[i])
+		{
+			/*
+			 * return the difference between
+			 * the two characters
+			*/
+			r = s1[i] - s2[i];
+			break;
+		}
+		else
+		{
+			r = s1[i] - s2[i];
+		}
 		i++;
 	}
 
-	return (dest);
+	return (r);
 }
