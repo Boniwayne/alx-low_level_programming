@@ -4,7 +4,7 @@
 int main(int argc, char argv[])
 
 {
-	printf("Mynameis\n");
+	printf("./mynameis\n");
 	
 	return (0);
 
